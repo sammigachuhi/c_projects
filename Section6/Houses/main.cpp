@@ -9,19 +9,33 @@ using namespace std;
 //-------------- main function -----------------------------
 int main() {
 
-    House myHouse;
-    House yourHouse;
+    // House myHouse;
+    House theirHouse(2, 10, "green");
+    theirHouse.print();
+    // House yourHouse;
+    // House myHouse;
 
-    myHouse.setNumStories(2);
-    myHouse.setNumWindows(6);
-    myHouse.setColor("red");
+    // cout << "Before calling any setters..." << endl;
+    // myHouse.print();
 
-    yourHouse.setNumStories(3);
-    yourHouse.setNumWindows(10);
-    yourHouse.setColor("blue");
+    // myHouse.setNumStories(2);
+    // myHouse.setNumWindows(6);
+    // myHouse.setColor("red");
 
-    myHouse.print();
-    yourHouse.print();
+    // cout << "\nAfter calling setters..." << endl;
+    // myHouse.print();
+
+
+    // myHouse.setNumStories(2);
+    // myHouse.setNumWindows(6);
+    // myHouse.setColor("red");
+
+    // yourHouse.setNumStories(3);
+    // yourHouse.setNumWindows(10);
+    // yourHouse.setColor("blue");
+
+    // myHouse.print();
+    // yourHouse.print();
 
     return 0;
 }

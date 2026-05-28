@@ -8,6 +8,10 @@ class House {
     public: 
         // member functions belong to a class or methods.
         // setters
+        House();
+        House(int numStories, int numWindows, string color);
+        
+        virtual ~House() final;
         void setNumStories(int numStories);
 
         void setNumWindows(int numWindows);
