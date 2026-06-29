@@ -1,0 +1,10 @@
+Original no.4	Num * 2: 8
+Original no.8	Num * 2: 16
+Original no.10	Num * 2: 20
+Original no.2	Num * 2: 4
+Original no.8	Num * 2: 16
+Original no.8	Num * 2: 16
+Original no.6	Num * 2: 12
+Original no.6	Num * 2: 12
+Original no.2	Num * 2: 4
+Original no.5	Num * 2: 10
