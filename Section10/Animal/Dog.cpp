@@ -17,6 +17,10 @@ string Dog::makeNoise() const {
     return "Woof!";
 }
 
+string Dog::eat() const {
+    return "I love dog food!";
+}
+
 void Dog::chaseCat() const {
     cout << "Here, kitty kitty!" << endl;
 }
@@ -26,6 +30,7 @@ void Dog::display() const {
     digHole();
     makeNoise();
     chaseCat();
+    eat();
 }
 
 

@@ -17,7 +17,9 @@ class Animal {
         string getName() const;
         double getWeight() const;
 
-        string makeNoise();
+        virtual string makeNoise() const = 0;
+
+        virtual string eat() const = 0;
 
         void display() const;
 

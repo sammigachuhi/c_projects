@@ -24,9 +24,9 @@ double Animal::getWeight() const {
     return weight;
 }
 
-string Animal::makeNoise() {
-    return "Unknown";
-}
+// string Animal::makeNoise() const {
+//     return "Unknown";
+// }
 
 void Animal::display() const {
     cout << "Name: " << name << endl;

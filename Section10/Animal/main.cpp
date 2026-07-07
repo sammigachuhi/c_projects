@@ -6,35 +6,40 @@ using namespace std;
 
 int main() {
 
-    Animal myAnimal("cow", 120.2);
+    // Animal myAnimal("cow", 120.2);
     Dog dog("Rover", 80, "Greyhound");
 
-    cout << "-------- My Animal Charateristics-------------" << endl;
-    cout << "Animal name: " << myAnimal.getName() << endl;
-    cout << "Animal name: " << myAnimal.getWeight() << endl;
-    cout << "Animal noise: " << myAnimal.makeNoise() << endl;
-    cout << "---Display function test---" << endl;
-    myAnimal.display();
+    // key line
+    Animal* dogPtr = new Dog("Fido", 115, "Golden Retriever");
+    cout << "Make noise? " << dogPtr -> makeNoise() << endl;
+    cout << "What did you say? " << dogPtr -> eat() << endl;
 
-    // Update name of animal and weight
-    myAnimal.setName("Aberdeen");
-    myAnimal.setWeight(200.7);
+    delete dogPtr;
+    dogPtr = nullptr;
 
-    cout << "\n------Improved Animal Characteristics----------" << endl;
-    cout << "Animal name: " << myAnimal.getName() << endl;
-    cout << "Animal name: " << myAnimal.getWeight() << endl;
-    cout << "Animal noise: " << myAnimal.makeNoise() << endl;
-    cout << "---Updated Display function test---" << endl;
-    myAnimal.display();
+    // cout << "-------- My Animal Charateristics-------------" << endl;
+    // cout << "Animal name: " << myAnimal.getName() << endl;
+    // cout << "Animal name: " << myAnimal.getWeight() << endl;
+    // cout << "Animal noise: " << myAnimal.makeNoise() << endl;
+    // cout << "---Display function test---" << endl;
+    // myAnimal.display();
 
-    cout << "Dog's name: " << dog.getName()  << endl;
-    cout << "Dog's weight: " << dog.getWeight() << endl;
-    cout << "Dog's noise: " << dog.makeNoise() << endl;
-    dog.digHole();
-    dog.chaseCat();
+    // // Update name of animal and weight
+    // myAnimal.setName("Aberdeen");
+    // myAnimal.setWeight(200.7);
 
-    cout << endl;
-    dog.display();
+    // cout << "\n------Improved Animal Characteristics----------" << endl;
+    // cout << "Animal name: " << myAnimal.getName() << endl;
+    // cout << "Animal name: " << myAnimal.getWeight() << endl;
+    // cout << "Animal noise: " << myAnimal.makeNoise() << endl;
+    // cout << "---Updated Display function test---" << endl;
+    // myAnimal.display();
+
+    // cout << "Dog's name: " << dog.getName()  << endl;
+    // cout << "Dog's weight: " << dog.getWeight() << endl;
+    // cout << "Dog's noise: " << dog.makeNoise() << endl;
+    // dog.digHole();
+    // dog.chaseCat();
 
 
     return 0;
