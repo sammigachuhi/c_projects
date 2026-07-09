@@ -1,5 +1,6 @@
 #include "Animal.h"
 #include "Dog.h"
+#include "Cat.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,8 +15,24 @@ int main() {
     cout << "Make noise? " << dogPtr -> makeNoise() << endl;
     cout << "What did you say? " << dogPtr -> eat() << endl;
 
+    /////////////////////////////////////////////////////
+    ///// Cat 
+    cout << "----------------Cat details-----------------" << endl;
+    Animal* catPtr = new Cat("Ginger", 5.2);
+    Cat* realCat = dynamic_cast<Cat*>(catPtr);
+    cout << "Cat sounds: " << realCat -> makeNoise() << endl;
+    cout << "Cat eats: " << realCat -> eat() << endl;
+    realCat -> chaseMouse();
+
+
     delete dogPtr;
     dogPtr = nullptr;
+
+    /// delete cat pointer 
+    delete catPtr;
+    // delete realCat;
+    catPtr = nullptr;
+    // realCat = nullptr;
 
     // cout << "-------- My Animal Charateristics-------------" << endl;
     // cout << "Animal name: " << myAnimal.getName() << endl;
